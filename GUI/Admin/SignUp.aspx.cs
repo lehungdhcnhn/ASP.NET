@@ -15,7 +15,6 @@ namespace GUI.Admin
         {
 
         }
-
         protected void txtDangKy_Click1(object sender, EventArgs e)
         {
             DTO.UserDTO us = new DTO.UserDTO(-1, txtHoten.Text, txtTaikhoan.Text, txtPassWord.Text, 1, false, txtEmail.Text, txtPhone.Text);
