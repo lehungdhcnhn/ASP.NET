@@ -38,6 +38,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CKEditor.NET">
+      <HintPath>E:\New folder\a\bin\Debug\CKEditor.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="CKFinder, Version=2.6.0.2792, Culture=neutral, PublicKeyToken=579e7adc719a1423, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\New folder\a\New folder\ckfinder\bin\Debug\CKFinder.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.Data.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.RichEdit.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -45,6 +52,7 @@
     <Reference Include="DevExpress.Web.Resources.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Web.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -188,8 +196,11 @@
     <Content Include="Admin\Image\icons\favicon.ico" />
     <Content Include="Admin\Image\img-01.png" />
     <Content Include="Admin\Js\main.js" />
+    <Content Include="Admin\listAddTour.aspx" />
+    <Content Include="Admin\listTour.aspx" />
     <Content Include="Admin\Login.aspx" />
     <Content Include="Admin\SignUp.aspx" />
+    <Content Include="Admin\updateDiemDen.aspx" />
     <Content Include="Admin\Vendor\animate\animate.css" />
     <Content Include="Admin\Vendor\bootstrap\css\bootstrap-grid.css" />
     <Content Include="Admin\Vendor\bootstrap\css\bootstrap-grid.min.css" />
@@ -210,7 +221,13 @@
     <Content Include="Admin\Vendor\select2\select2.min.css" />
     <Content Include="Admin\Vendor\select2\select2.min.js" />
     <Content Include="Admin\Vendor\tilt\tilt.jquery.min.js" />
+    <Content Include="Global.asax" />
+    <Content Include="HomeWeb\DatTour.aspx" />
     <Content Include="HomeWeb\Home.aspx" />
+    <Content Include="HomeWeb\HomeDescription.aspx" />
+    <Content Include="HomeWeb\HomeWeb.aspx" />
+    <Content Include="HomeWeb\TourKhuyenMai.aspx" />
+    <Content Include="HomeWeb\TourNuocNgoai.aspx" />
     <Content Include="Image\10884_586183561399725_6501735_n.jpg" />
     <Content Include="Image\20150827110756-dathongbao.png" />
     <Content Include="Image\chauau1349x401-1902.jpg" />
@@ -309,7 +326,7 @@
     <Content Include="Admin\Vendor\bootstrap\css\bootstrap.css.map" />
     <Content Include="Admin\Vendor\bootstrap\css\bootstrap.min.css.map" />
     <Content Include="HomeWeb\HomeMaster.Master" />
-    <Content Include="Admin\Home.Master" />
+    <Content Include="Admin\Home.master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -325,6 +342,7 @@
     <Content Include="bootstrap\owl.theme.css" />
     <Content Include="bootstrap\setmedia.css" />
     <Content Include="bootstrap\style00.css" />
+    <Content Include="Admin\listDiemDen.aspx" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.11.1.min.js" />
     <Content Include="Scripts\menu-2.js" />
@@ -341,6 +359,20 @@
     <Compile Include="Admin\admin.aspx.designer.cs">
       <DependentUpon>admin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\listAddTour.aspx.cs">
+      <DependentUpon>listAddTour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\listAddTour.aspx.designer.cs">
+      <DependentUpon>listAddTour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\listTour.aspx.cs">
+      <DependentUpon>listTour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\listTour.aspx.designer.cs">
+      <DependentUpon>listTour.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -355,6 +387,23 @@
     <Compile Include="Admin\SignUp.aspx.designer.cs">
       <DependentUpon>SignUp.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\listDiemDen.aspx.cs">
+      <DependentUpon>listDiemDen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\listDiemDen.aspx.designer.cs">
+      <DependentUpon>listDiemDen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HomeWeb\DatTour.aspx.cs">
+      <DependentUpon>DatTour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeWeb\DatTour.aspx.designer.cs">
+      <DependentUpon>DatTour.aspx</DependentUpon>
+    </Compile>
     <Compile Include="HomeWeb\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -362,9 +411,38 @@
     <Compile Include="HomeWeb\Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
+    <Compile Include="HomeWeb\HomeDescription.aspx.cs">
+      <DependentUpon>HomeDescription.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeWeb\HomeDescription.aspx.designer.cs">
+      <DependentUpon>HomeDescription.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeWeb\HomeWeb.aspx.cs">
+      <DependentUpon>HomeWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeWeb\HomeWeb.aspx.designer.cs">
+      <DependentUpon>HomeWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeWeb\TourKhuyenMai.aspx.cs">
+      <DependentUpon>TourKhuyenMai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeWeb\TourKhuyenMai.aspx.designer.cs">
+      <DependentUpon>TourKhuyenMai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeWeb\TourNuocNgoai.aspx.cs">
+      <DependentUpon>TourNuocNgoai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeWeb\TourNuocNgoai.aspx.designer.cs">
+      <DependentUpon>TourNuocNgoai.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Admin\Image\Tour\" />
     <Folder Include="Client\" />
   </ItemGroup>
   <ItemGroup>
@@ -383,6 +461,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

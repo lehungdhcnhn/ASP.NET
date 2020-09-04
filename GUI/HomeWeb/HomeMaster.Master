@@ -4,19 +4,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
-    <script src="../Scripts/jquery-1.11.1.min.js"></script>
-    <script src="../Scripts/bootstrap.min.js"></script>
-    <script src="../Scripts/menu-2.js"></script>
-    <script src="../Scripts/style-img.js"></script>
-    <link href="../bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <link href="../bootstrap/font-awesome.css" rel="stylesheet" />
-    <link href="../bootstrap/menu-2.css" rel="stylesheet" />
-    <link href="../bootstrap/owl.carousel.css" rel="stylesheet" />
-    <link href="../bootstrap/setmedia.css" rel="stylesheet" />
-    <link href="../bootstrap/owl.theme.css" rel="stylesheet" />
-    <link href="../bootstrap/style00.css" rel="stylesheet" />
+   
+   
+    <link href="http://viettour.com.vn/assets/css/front_end/bootstrap.min.css" rel="stylesheet"/>
+    <link href="http://viettour.com.vn/assets/css/front_end/font-awesome.css" rel="stylesheet"/>
+    <link href="http://viettour.com.vn/assets/css/front_end/setmedia.css" rel="stylesheet"/>
+    <link href="http://viettour.com.vn/assets/css/front_end/menu-2.css" rel="stylesheet"/>
+    <link href="http://viettour.com.vn/assets/css/front_end/style00.css" rel="stylesheet"/>
+    <link href="http://viettour.com.vn/assets/css/front_end/owl.carousel.css" rel="stylesheet"/>
+    <link href="http://viettour.com.vn/assets/css/front_end/owl.theme.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="http://viettour.com.vn/assets/js/front_end/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="http://viettour.com.vn/assets/js/front_end/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://viettour.com.vn/assets/js/front_end/menu-2.js"></script>
+    <script type="text/javascript" src="http://viettour.com.vn/assets/js/front_end/style-img.js"></script>
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -112,7 +114,7 @@
             </div>
         </section>
     
-        <div class="clearfix"></div>
+       <div class="clearfix"></div>
     
         <section class="sc_header_mid">
             <div class="container">
@@ -121,8 +123,8 @@
                 </div>
             </div>
         </section>
-    
-        <div class="clearfix"></div>
+           
+    <div class="clearfix"></div>
     
         <section class="sc_header_menu clearfix sticky-header">
             <div class="container">
@@ -135,80 +137,35 @@
                                     <ul class="nav-menu menu clearfix">
                                         <li class="menu-item is-active"><a href="http://viettour.com.vn/" class="menu-link">Trang chủ</a></li>
                                         
-    <li class="menu-item "><a href="http://viettour.com.vn/gioi-thieu.html" class="menu-link ">Giới thiệu</a>
+    <li class="menu-item "><a href="#" class="menu-link ">Giới thiệu</a>
         </li>
     
-        <li class="menu-item "><a href="http://viettour.com.vn/tour-khuyen-mai" class="menu-link ">TOUR KHUYẾN MÃI</a>
+        <li class="menu-item "><a href="TourKhuyenMai.aspx" class="menu-link ">TOUR KHUYẾN MÃI</a>
         </li>
     
-        <li class="menu-item has-dropdown "><a href="http://viettour.com.vn/tour-trong-nuoc.html" class="menu-link ">TOUR TRONG NƯỚC</a>
-            <ul class="nav-dropdown menu mega_drop">
-                                                    <li class="menu-item"><a href="http://viettour.com.vn/du-lich-cao-bang" class="menu-link">Du Lịch Cao Bằng</a></li>
-                                            <li class="menu-item"><a href="http://viettour.com.vn/du-lich-ha-long-cat-ba" class="menu-link">Du Lịch Hạ Long &Cát Bà</a></li>
-                                                                <li class="menu-item"><a href="http://viettour.com.vn/du-lich-sam-son" class="menu-link">Du Lịch Sầm Sơn</a></li>
-                                                                <li class="menu-item"><a href="http://viettour.com.vn/du-lich-nha-trang" class="menu-link">Du Lịch Nha trang</a></li>
-                                                                <li class="menu-item"><a href="http://viettour.com.vn/du-lich-sapa-dong-tay-bac" class="menu-link">Du Lịch Sapa & Đông Tây Bắc</a></li>
-                                                                <li class="menu-item"><a href="http://viettour.com.vn/du-lich-quang-binh" class="menu-link">Du Lịch Quảng Bình</a></li>
-                                                                                    <li class="menu-item"><a href="http://viettour.com.vn/du-lich-quy-nhon" class="menu-link">Du Lịch Quy Nhơn</a></li>
-                                            <li class="menu-item"><a href="http://viettour.com.vn/du-lich-phu-quoc" class="menu-link">Du Lịch Phú Quốc</a></li>
-                                                                                    <li class="menu-item"><a href="http://viettour.com.vn/du-lich-hue-da-nang-hoi-an" class="menu-link">Du Lịch Huế, Đà Nắng, Hội An</a></li>
-                                                                <li class="menu-item"><a href="http://viettour.com.vn/du-lich-da-lat-tay-nguyen" class="menu-link">Du Lịch Đà Lạt, Tây Nguyên</a></li>
-                                                                <li class="menu-item"><a href="http://viettour.com.vn/du-lich-mui-ne-phan-thiet" class="menu-link">Du Lịch Mũi Né, Phan Thiết</a></li>
-                                                                <li class="menu-item"><a href="http://viettour.com.vn/du-lich-hoi-an" class="menu-link">Du Lịch Hội An</a></li>
-                                                                <li class="menu-item"><a href="http://viettour.com.vn/du-lich-moc-chau" class="menu-link">Du Lịch Mộc Châu</a></li>
-                                                                <li class="menu-item"><a href="http://viettour.com.vn/du-lich-ha-giang" class="menu-link">Du Lịch Hà Giang</a></li>
-                                                                <li class="menu-item"><a href="http://viettour.com.vn/du-lich-le-hoi" class="menu-link">Du Lịch Lễ Hội</a></li>
-                                                                <li class="menu-item"><a href="http://viettour.com.vn/du-lich-mien-tay" class="menu-link">Du Lịch Miền Tây</a></li>
-                                                                <li class="menu-item"><a href="http://viettour.com.vn/du-lich-con-dao-vung-tau" class="menu-link">Du Lịch Côn Đảo, Vũng Tàu</a></li>
-                                                                                                                                                                                                                </ul>
+        <li class="menu-item has-dropdown "><a href="Home.aspx" class="menu-link ">TOUR TRONG NƯỚC</a></li>
+          
+    
+        <li class="menu-item has-dropdown "><a href="TourNuocNgoai.aspx" class="menu-link ">TOUR NƯỚC NGOÀI</a>
+            
         </li>
     
-        <li class="menu-item has-dropdown "><a href="http://viettour.com.vn/tour-nuoc-ngoai" class="menu-link ">TOUR NƯỚC NGOÀI</a>
-            <ul class="nav-dropdown menu mega_drop">
-                                <li class="menu-item"><a href="http://viettour.com.vn/du-lich-an-do" class="menu-link">Du Lịch Ấn Độ</a></li>
-                                                                                    <li class="menu-item"><a href="http://viettour.com.vn/du-lich-brunei" class="menu-link">Du Lịch Brunei</a></li>
-                                                                <li class="menu-item"><a href="http://viettour.com.vn/du-lich-campuchia" class="menu-link">Du Lịch Campuchia</a></li>
-                                                                <li class="menu-item"><a href="http://viettour.com.vn/du-lich-canada" class="menu-link">Du Lịch Canada</a></li>
-                                                                <li class="menu-item"><a href="http://viettour.com.vn/du-lich-chau-au" class="menu-link">Du Lịch Châu Âu</a></li>
-                                                                <li class="menu-item"><a href="http://viettour.com.vn/du-lich-dubai" class="menu-link">Du Lịch Dubai</a></li>
-                                            <li class="menu-item"><a href="http://viettour.com.vn/du-lich-dai-loan" class="menu-link">Du Lịch Đài Loan</a></li>
-                                                                                    <li class="menu-item"><a href="http://viettour.com.vn/du-lich-han-quoc" class="menu-link">Du Lịch Hàn Quốc</a></li>
-                                                                                    <li class="menu-item"><a href="http://viettour.com.vn/du-lich-hong-kong" class="menu-link">Du Lịch Hong Kong</a></li>
-                                                                <li class="menu-item"><a href="http://viettour.com.vn/du-lich-indonesia" class="menu-link">Du Lịch Indonesia</a></li>
-                                                                <li class="menu-item"><a href="http://viettour.com.vn/du-lich-lao" class="menu-link">Du Lịch Lào</a></li>
-                                                                <li class="menu-item"><a href="http://viettour.com.vn/du-lich-malaysia" class="menu-link">Du Lịch Malaysia</a></li>
-                                                                <li class="menu-item"><a href="http://viettour.com.vn/du-lich-my" class="menu-link">Du Lịch Mỹ</a></li>
-                                                                <li class="menu-item"><a href="http://viettour.com.vn/du-lich-myanmar" class="menu-link">Du Lịch Myanmar</a></li>
-                                                                <li class="menu-item"><a href="http://viettour.com.vn/du-lich-maldives" class="menu-link">Du Lịch Maldives</a></li>
-                                                                <li class="menu-item"><a href="http://viettour.com.vn/du-lich-nam-phi" class="menu-link">Du Lịch Nam Phi</a></li>
-                                                                <li class="menu-item"><a href="http://viettour.com.vn/du-lich-nga" class="menu-link">Du Lịch Nga</a></li>
-                                            <li class="menu-item"><a href="http://viettour.com.vn/du-lich-nhat-ban" class="menu-link">Du Lịch Nhật Bản</a></li>
-                                            <li class="menu-item"><a href="http://viettour.com.vn/du-lich-philippines" class="menu-link">Du Lịch Philippines</a></li>
-                                            <li class="menu-item"><a href="http://viettour.com.vn/du-lich-singapore" class="menu-link">Du Lịch Singapore</a></li>
-                                            <li class="menu-item"><a href="http://viettour.com.vn/du-lich-thai-lan" class="menu-link">Du Lịch Thái Lan</a></li>
-                                            <li class="menu-item"><a href="http://viettour.com.vn/du-lich-trieu-tien" class="menu-link">Du Lịch Triều Tiên</a></li>
-                                            <li class="menu-item"><a href="http://viettour.com.vn/du-lich-trung-quoc" class="menu-link">Du Lịch Trung Quốc</a></li>
-                                            <li class="menu-item"><a href="http://viettour.com.vn/du-lich-uc" class="menu-link">Du Lịch Úc</a></li>
-                                            <li class="menu-item"><a href="http://viettour.com.vn/du-lich-chua-benh" class="menu-link">Du Lịch Chữa Bệnh</a></li>
-                            </ul>
+        <li class="menu-item "><a href="#" class="menu-link ">DỊCH VỤ VISA</a>
         </li>
     
-        <li class="menu-item "><a href="http://visa.viettour.com.vn/" class="menu-link ">DỊCH VỤ VISA</a>
+        <li class="menu-item "><a href="#" class="menu-link ">Khách hàng</a>
         </li>
     
-        <li class="menu-item "><a href="http://viettour.com.vn/khach-hang" class="menu-link ">Khách hàng</a>
+        <li class="menu-item "><a href="#" class="menu-link ">THUÊ XE</a>
         </li>
     
-        <li class="menu-item "><a href="http://viettour.com.vn/dich-vu-cho-thue-xe" class="menu-link ">THUÊ XE</a>
+        <li class="menu-item "><a href="#" class="menu-link ">TIN TỨC</a>
         </li>
     
-        <li class="menu-item "><a href="http://viettour.com.vn/tin-du-lich" class="menu-link ">TIN TỨC</a>
+        <li class="menu-item "><a href="#" class="menu-link ">THANH TOÁN</a>
         </li>
     
-        <li class="menu-item "><a href="http://viettour.com.vn/thanh-toan.html" class="menu-link ">THANH TOÁN</a>
-        </li>
-    
-        <li class="menu-item "><a href="http://viettour.com.vn/lien-he" class="menu-link ">LIÊN HỆ</a>
+        <li class="menu-item "><a href="#" class="menu-link ">LIÊN HỆ</a>
         </li>
     
         
@@ -255,6 +212,70 @@
     
     </section>
     </header>
+    <div class="clearfix clearfix-30"></div><article id="body_home">
+    <div class="container">
+        <div class="row_pc">
+
+            <section class="sc_page clearfix">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12 hidden-sm hidden-xs">
+                        <form class="box_searh_s" action="http://viettour.com.vn/search/searchPro" method="get">
+                            <div class="input-group">
+                                <input type="text" name="key" class="form-control" placeholder="Nháº­p tá»« khÃ³a...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                                </span>
+                            </div><!-- /input-group -->
+                        </form>
+                        <form class="form_search_tour">
+					
+                            <div class="search_tour">
+                                <ul class="ul_lv1_searcht">
+
+                                    <li>
+                                        <h3 class="tit_tls">Các Loại hình tour</h3>
+                                        <form id="frm_menu" method="get" name="frm_menu" action="http://viettour.com.vn/tour-trong-nuoc">
+
+                                            <ul>
+                                                <div class="sub_tit_tls">Theo trong Nước</div>
+                                                     
+                                                        <li><a href=""><span>HÀ NỘI & LÂN CẬN</span></a></li>
+														<li><a href=""><span>CÔN ĐẢO, PHÚ QUỐC</span></a></li>
+														<li><a href=""><span>QUẢNG BÌNH</span></a></li>
+														<li><a href=""><span>SAPA & ĐÔNG TÂY BẮC</span></a></li>
+														<li><a href=""><span>HUẾ, ĐÀ NẴNG, HỘI AN</span></a></li>
+														<li><a href=""><span>ĐÀ LẠT, TÂY NGUYÊN</span></a></li>
+                                                <div class="sub_tit_tls">Tour ngoài nước</div>		
+                                                        <li><a href=""><span>SINGAPORE</</span></a></li>																																																																																																																																																												
+														<li><a href=""><span>HÀN QUỐC</span></a></li>
+														<li><a href=""><span>NHẬT BẢN</span></a></li>
+														<li><a href=""><span>MALAYSIA</span></a></li>
+                                                        <li><a href=""><span>TRUNG QUỐC</span></a></li>
+														<li><a href=""><span>ĐÀI LOAN</span></a></li>
+														<li><a href=""><span>HÔNG KÔNG</span></a></li>     
+                                                <li><a href=""><span>LÀO</span></a></li>
+														<li><a href=""><span>MYANMAR</span></a></li>
+														<li><a href=""><span>MALDIVES</span></a></li>
+														<li><a href=""><span>HAWAII</span></a></li>
+														<li><a href=""><span>NAM PHI</span></a></li>
+														<li><a href=""><span>NGA</span></a></li>
+														<li><a href=""><span>PHILIPPINES</span></a></li>
+														<li><a href=""><span>DU LỊCH CHỮA BỆNH</span></a></li>
+														<li><a href=""><span>CANADA</span></a></li>                                                                                             
+                                            </ul>
+
+                                        </form>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+					<asp:ContentPlaceHolder ID="main_body" runat="server">
+                              Nội dung tin ở đây</asp:ContentPlaceHolder>
+                    </div>
+					
+				</div>
+                  </section>
+             
      <div class="clearfix clearfix-20"></div><footer id="footer">
 <section class="partner">
     <div class="container">
@@ -389,31 +410,12 @@
                     <div class="clearfix"></div>
                     <ul class="menu_ft">
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 <li><a href="http://viettour.com.vn/du-lich-an-do.html">Du Lịch Ấn Độ</a></li>
-                                                                                                        <li><a href="http://viettour.com.vn/du-lich-brunei.html">Du Lịch Brunei</a></li>
-                                                                                                        <li><a href="http://viettour.com.vn/du-lich-campuchia.html">Du Lịch Campuchia</a></li>
-                                                                                                        <li><a href="http://viettour.com.vn/du-lich-chau-au.html">Du Lịch Châu Âu</a></li>
-                                                                                                        <li><a href="http://viettour.com.vn/du-lich-dubai.html">Du Lịch Dubai</a></li>
-                                                                                                        <li><a href="http://viettour.com.vn/du-lich-dai-loan.html">Du Lịch Đài Loan</a></li>
-                                                                                                        <li><a href="http://viettour.com.vn/du-lich-han-quoc.html">Du Lịch Hàn Quốc</a></li>
-                                                                                                        <li><a href="http://viettour.com.vn/du-lich-hong-kong.html">Du Lịch Hong Kong</a></li>
-                                                                                                        <li><a href="http://viettour.com.vn/du-lich-indonesia.html">Du Lịch Indonesia</a></li>
-                                                                                                        <li><a href="http://viettour.com.vn/du-lich-lao.html">Du Lịch Lào</a></li>
-                                                                                                        <li><a href="http://viettour.com.vn/du-lich-malaysia.html">Du Lịch Malaysia</a></li>
-                                                                                                        <li><a href="http://viettour.com.vn/du-lich-my.html">Du Lịch Mỹ</a></li>
-                                                                                                        <li><a href="http://viettour.com.vn/du-lich-myanmar.html">Du Lịch Myanmar</a></li>
-                                                                                                        <li><a href="http://viettour.com.vn/du-lich-maldives.html">Du Lịch Maldives</a></li>
-                                                                                                        <li><a href="http://viettour.com.vn/du-lich-nam-phi.html">Du Lịch Nam Phi</a></li>
-                                                                                                        <li><a href="http://viettour.com.vn/du-lich-nga.html">Du Lịch Nga</a></li>
-                                                                                                        <li><a href="http://viettour.com.vn/du-lich-nhat-ban.html">Du Lịch Nhật Bản</a></li>
-                                                                                                        <li><a href="http://viettour.com.vn/du-lich-philippines.html">Du Lịch Philippines</a></li>
-                                                                                                        <li><a href="http://viettour.com.vn/du-lich-singapore.html">Du Lịch Singapore</a></li>
-                                                                                                        <li><a href="http://viettour.com.vn/du-lich-thai-lan.html">Du Lịch Thái Lan</a></li>
-                                                                                                        <li><a href="http://viettour.com.vn/du-lich-trung-quoc.html">Du Lịch Trung Quốc</a></li>
-                                                                                                        <li><a href="http://viettour.com.vn/du-lich-uc.html">Du Lịch Úc</a></li>
-                                                                                                        <li><a href="http://viettour.com.vn/du-lich-chua-benh.html">Du Lịch Chữa Bệnh</a></li>
-                                                                                                                                                                                                                <li><a href="http://viettour.com.vn/du-lich-canada.html">Du Lịch Canada</a></li>
-                                                                                                                                                                                                                <li><a href="http://viettour.com.vn/du-lich-trieu-tien.html">Du Lịch Triều Tiên</a></li>
-                                                                        </ul>
+                        <li><a href="http://viettour.com.vn/du-lich-brunei.html">Du Lịch SinGaPoRe</a></li>
+                        <li><a href="http://viettour.com.vn/du-lich-campuchia.html">Du Lịch Nhật Bản</a></li>
+                        <li><a href="http://viettour.com.vn/du-lich-chau-au.html">Du Lịch Hàn Quốc</a></li>
+                        <li><a href="http://viettour.com.vn/du-lich-dubai.html">Du Lịch Dubai</a></li>
+                         <li><a href="http://viettour.com.vn/du-lich-trieu-tien.html">Du Lịch Triều Tiên</a></li>
+      </ul>
                 </div>
 
                 
@@ -541,6 +543,7 @@
         </div>
     </div>
 </section>
+
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
     var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();

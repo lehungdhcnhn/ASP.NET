@@ -42,6 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CGloble.cs" />
+    <Compile Include="DiemdenBUS.cs" />
+    <Compile Include="OrderBUS.cs" />
+    <Compile Include="TourBUS.cs" />
     <Compile Include="UserBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
