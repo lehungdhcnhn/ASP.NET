@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HomeWeb/HomeMaster.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="GUI.HomeWeb.Home" %>
 
 <%@ Register Assembly="DevExpress.Web.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
+<%@ Register Src="~/HomeWeb/Search.ascx" TagPrefix="uc1" TagName="Search" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="main_body" runat="server">
                             <div class="clearfix clearfix-20"></div>
                         <div class="sb_widget ">
@@ -22,13 +24,14 @@
                             <a href="https://doanhnhanplus.online/" style="font-size: 0.1px;">Đọc Báo doanh nhân</a>
                         </div>
 </div>
+    
     <div class="col-md-9 col-sm-12 col-xs-12">
        <h2 class="tit_home"><span class="txt_tit_home">TOUR TRONG NƯỚC</span></h2>
 
     <div class="clearfix"></div>
     <div class="search_content_s">
         <div class="img_search_s"><img src="http://viettour.com.vn/assets/css/img/search.png" alt=""/></div>
-        <form method="post" action="http://viettour.com.vn/start">
+       
 		
             <div class="right_search_s">
                 <div class="thongtintourhot">
@@ -47,26 +50,12 @@
                     <span><span style="color: rgb(0, 51, 102);"> để xem chi tiết</span></span>
                 </div>
                 <div class="clearfix"></div>
-                <div id="khoihanh">Khởi hành từ
-                    <asp:DropDownList ID="dropStart" CssClass="select" runat="server">
-                                <asp:ListItem Text="Hà Nội"  ></asp:ListItem>
-                                <asp:ListItem Text="Hồ Chí Minh" ></asp:ListItem>
-                   </asp:DropDownList>
-                </div>
-                <div id="diemden"> đến
-                    <label>
-                       <asp:DropDownList ID="dropEnd"  CssClass="select" runat="server" ViewStateMode="Enabled" EnableViewState="true" OnSelectedIndexChanged="dropEnd_SelectedIndexChanged" >
-                               
-                            </asp:DropDownList>
-                      
-                           
-                 
-                    </label>
-                    
-                    <asp:LinkButton runat="server" CssClas="tim_home" Text="Tìm" OnClick="SeachTourNe"></asp:LinkButton>
-                </div>
+               
+                    <uc1:Search runat="server" id="Search" />
+                  
+                       
             </div>
-        </form>
+       
     </div>
     <div class="clearfix" style="margin-bottom: 20px"></div>
     <div class="list_banner_home">
@@ -99,7 +88,7 @@
     <div class="clearfix clearfix-10"></div>
     <div class="list_tour_cate">
          <div class="box_tour_cate">
-             <asp:DataList ID="DataList1" runat="server" DataKeyField="ID" OnSelectedIndexChanged="DataList1_SelectedIndexChanged" DataSourceID="SqlDataSource1">
+             <asp:DataList ID="DataList1" runat="server" DataKeyField="ID" DataSourceID="SqlDataSource1">
         <ItemTemplate>
             <table cellpadding="0" cellspacing="0" class="nav-justified">
                 <tr>
@@ -108,11 +97,11 @@
                     </td>
                 </tr>
                 <tr>
-                    <td rowspan="6" style="width:250px">
+                    <td rowspan="6" style="width:230px">
                        <%-- <asp:Image CssClass="w_100 img_item_tour" Height="150px" ID="Image1" runat="server" ImageUrl='<%# Eval("thumbnail") %>' />--%>
 
                         <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl='<%# "HomeDescription.aspx?Id="+Eval("id").ToString() %>'
-                            ImageUrl='<%# Eval("thumbnail") %>' ToolTip="Xem chi tiết...." CssClass="w_100 img_item_tour" ImageHeight="230px" ImageWidth="230px"
+                            ImageUrl='<%# Eval("thumbnail") %>' ToolTip="Xem chi tiết...." CssClass="w_100 img_item_tour" ImageHeight="200px" ImageWidth="200px"
                             ></asp:HyperLink>
 
                     </td>
@@ -162,5 +151,7 @@
 	    </div>
 		</div>
    </div>
+      
+       
 </asp:Content>
  

@@ -1,4 +1,6 @@
-﻿
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HomeMaster.Master.cs" Inherits="GUI.HomeWeb.Site1" %>
+
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -230,6 +232,7 @@
                         <form class="form_search_tour">
 					
                             <div class="search_tour">
+                                
                                 <ul class="ul_lv1_searcht">
 
                                     <li>
@@ -239,18 +242,18 @@
                                             <ul>
                                                 <div class="sub_tit_tls">Theo trong Nước</div>
                                                      
-                                                        <li><a href=""><span>HÀ NỘI & LÂN CẬN</span></a></li>
-														<li><a href=""><span>CÔN ĐẢO, PHÚ QUỐC</span></a></li>
-														<li><a href=""><span>QUẢNG BÌNH</span></a></li>
-														<li><a href=""><span>SAPA & ĐÔNG TÂY BẮC</span></a></li>
-														<li><a href=""><span>HUẾ, ĐÀ NẴNG, HỘI AN</span></a></li>
-														<li><a href=""><span>ĐÀ LẠT, TÂY NGUYÊN</span></a></li>
+                                                        <li><a href="Seach.aspx?diemden=HÀ NỘI & LÂN CẬN"><span>HÀ NỘI , LÂN CẬN</span></a></li>
+														<li><a href="Seach.aspx?diemden=CÔN ĐẢO, PHÚ QUỐC"><span>CÔN ĐẢO, PHÚ QUỐC</span></a></li>
+														<li><a href="Seach.aspx?diemden=QUẢNG BÌNH"><span>QUẢNG BÌNH</span></a></li>
+														<li><a href="Seach.aspx?diemden=SAPA & ĐÔNG TÂY BẮC"><span>SAPA , ĐÔNG TÂY BẮC</span></a></li>
+														<li><a href="Seach.aspx?diemden=HUẾ, ĐÀ NẴNG, HỘI AN"><span>HUẾ, ĐÀ NẴNG, HỘI AN</span></a></li>
+														<li><a href="Seach.aspx?diemden=ĐÀ LẠT, TÂY NGUYÊN"><span>ĐÀ LẠT, TÂY NGUYÊN</span></a></li>
                                                 <div class="sub_tit_tls">Tour ngoài nước</div>		
-                                                        <li><a href=""><span>SINGAPORE</</span></a></li>																																																																																																																																																												
-														<li><a href=""><span>HÀN QUỐC</span></a></li>
-														<li><a href=""><span>NHẬT BẢN</span></a></li>
-														<li><a href=""><span>MALAYSIA</span></a></li>
-                                                        <li><a href=""><span>TRUNG QUỐC</span></a></li>
+                                                        <li><a href="Seach.aspx?diemden=SINGAPORE"><span>SINGAPORE</</span></a></li>																																																																																																																																																												
+														<li><a href="Seach.aspx?diemden=HÀN QUỐC"><span>HÀN QUỐC</span></a></li>
+														<li><a href="Seach.aspx?diemden=NHẬT BẢN"><span>NHẬT BẢN</span></a></li>
+														<li><a href="Seach.aspx?diemden=MALAYSIA"><span>MALAYSIA</span></a></li>
+                                                        <li><a href="Seach.aspx?diemden=TRUNG QUỐC"><span>TRUNG QUỐC</span></a></li>
 														<li><a href=""><span>ĐÀI LOAN</span></a></li>
 														<li><a href=""><span>HÔNG KÔNG</span></a></li>     
                                                 <li><a href=""><span>LÀO</span></a></li>
@@ -731,3 +734,4 @@
     </form>
 </body>
 </html>
+

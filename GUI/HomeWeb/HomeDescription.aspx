@@ -26,67 +26,7 @@
                     <span><span style="color: rgb(0, 51, 102);"> để xem chi tiết</span></span>
                 </div>
                 <div class="clearfix"></div>
-                <div id="khoihanh">Khởi hành từ
-                    <select name="khoihanh" class="select" id="select2">
-                                                                                                                                        <option value="59">HỒ CHÍ MINH</option>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <option value="22">HÀ NỘI</option>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </select>
-                </div>
-                <div id="diemden"> đến
-                    <label>
-                        <select name="diemden" class="select" id="select">
-                            <option value=" ">Chọn điểm đến</option>
-                            <optgroup label="Trong nước">
-                                                                                                            <option value="24">HÀ NỘI & LÂN CẬN</option>
-                                                                                                                                                                                                                    <option value="31">CÔN ĐẢO, PHÚ QUỐC</option>
-                                                                                                                                                <option value="27">QUẢNG BÌNH</option>
-                                                                                                                                                <option value="25">SAPA & ĐÔNG TÂY BẮC</option>
-                                                                                                                                                <option value="26">HUẾ, ĐÀ NẴNG, HỘI AN</option>
-                                                                                                                                                <option value="29">ĐÀ LẠT, TÂY NGUYÊN</option>
-                                                                                                                                                <option value="28">PHÚ YÊN, QUY NHƠN</option>
-                                                                                                                                                <option value="30">MŨI NÉ, NHA TRANG</option>
-                                                                                                                                                                                                                    <option value="32">MIỄN TÂY</option>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <option value="57">MỘC CHÂU</option>
-                                                                                                                                                <option value="58">HÀ GIANG</option>
-                                                                                                                                                                                                                    <option value="61">QUY NHƠN</option>
-                                                                                                                                                <option value="62">CAO BẰNG</option>
-                                                                                                                                                                                                                                                                                                                                                    
-                            </optgroup>
-                            <optgroup label="Nước ngoài">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <option value="33">THÁI LAN</option>
-                                                                                                                                                <option value="34">SINGAPORE</option>
-                                                                                                                                                <option value="35">HÀN QUỐC</option>
-                                                                                                                                                <option value="36">NHẬT BẢN</option>
-                                                                                                                                                <option value="37">MALAYSIA</option>
-                                                                                                                                                <option value="38">TRUNG QUỐC</option>
-                                                                                                                                                <option value="39">ĐÀI LOAN</option>
-                                                                                                                                                <option value="40">HÔNG KÔNG</option>
-                                                                                                                                                <option value="41">HOA KỲ</option>
-                                                                                                                                                <option value="42">CHÂU ÂU</option>
-                                                                                                                                                <option value="43">DUBAI</option>
-                                                                                                                                                <option value="44">ÚC</option>
-                                                                                                                                                <option value="45">ẤN ĐỘ</option>
-                                                                                                                                                <option value="46">BRUNEI </option>
-                                                                                                                                                <option value="47">CAMPUCHIA</option>
-                                                                                                                                                <option value="48">INDONESIA</option>
-                                                                                                                                                <option value="49">LÀO</option>
-                                                                                                                                                <option value="50">MYANMAR</option>
-                                                                                                                                                <option value="51">MALDIVES</option>
-                                                                                                                                                <option value="52">HAWAII</option>
-                                                                                                                                                <option value="53">NAM PHI</option>
-                                                                                                                                                <option value="54">NGA</option>
-                                                                                                                                                <option value="55">PHILIPPINES</option>
-                                                                                                                                                <option value="56">DU LỊCH CHỮA BỆNH</option>
-                                                                                                                                                                                                                                                                                        <option value="60">CANADA</option>
-                                                                                                                                                                                                                                                                                        <option value="63">TRIỀU TIÊN</option>
-                                                                                                                                                <option value="64">PHƯỢNG HOÀNG CỔ TRẤN</option>
-                                                                                                                                                <option value="65">LỆ GIANG</option>
-                                                                                                                                                <option value="66">BẮC KINH - THƯỢNG HẢI - HÀNG CHÂU - TÔ CHÂU</option>
-                                                                                                </optgroup>
-                        </select>
-                    </label>
-                    <input type="submit" class="tim_home" name="searchtour" value="&nbsp;">
-                </div>
+               
             </div>
         </form>
     </div>
@@ -130,11 +70,11 @@
                     </td>
                 </tr>
                 <tr>
-                    <td rowspan="6" style="width:250px">
+                    <td rowspan="6" style="width:230px">
                        <%-- <asp:Image CssClass="w_100 img_item_tour" Height="150px" ID="Image1" runat="server" ImageUrl='<%# Eval("thumbnail") %>' />--%>
 
                         <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl='<%# "HomeDescription.aspx?Id="+Eval("id").ToString() %>'
-                            ImageUrl='<%# Eval("thumbnail") %>' ToolTip="Xem chi tiết...." CssClass="w_100 img_item_tour" ImageHeight="230px" ImageWidth="230px"
+                            ImageUrl='<%# Eval("thumbnail") %>' ToolTip="Xem chi tiết...." CssClass="w_100 img_item_tour" ImageHeight="200px" ImageWidth="200px"
                             ></asp:HyperLink>
 
                     </td>
@@ -168,13 +108,16 @@
     <div class="content_detail_tour">
         <div class="tit_detail_tour">
             <span class="text_detail_tour">Chương trình tour</span>
-            <div class="pull-right" style="width: 202px">
+            <div  style="width: 202px">
                 
-                <form method="POST" action="http://viettour.com.vn/home/book">
-                <a href="" style="float: left" class="thanhtoan_dt">Thanh toán</a>
-                    <input type="hidden" name="name" value="CẦN THƠ - SÓC TRĂNG - BẠC LIÊU - CÀ MAU - ĐẤT MŨI - CHÂU ĐỐC - CẦN THƠ">
-                    <button type="submit" class="dattour_dt">Đặt Tour</button> 
-                </form>
+              
+                    <button type="submit" class="dattour_dt">
+                               <asp:HyperLink ID="HyperLink3"  Text="Đặt tour" runat="server" NavigateUrl='<%# "DatTour.aspx?id="+Eval("id").ToString() %>' >
+                             
+                             </asp:HyperLink>                    
+
+                    </button> 
+               
                 
             </div>
         </div>

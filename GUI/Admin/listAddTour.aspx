@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Home.master" AutoEventWireup="true" CodeBehind="listAddTour.aspx.cs" Inherits="GUI.Admin.listAddTour" ValidateRequest="false" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Home.Master" AutoEventWireup="true" CodeBehind="listAddTour.aspx.cs" Inherits="GUI.Admin.listAddTour" ValidateRequest="false" %>
  <%@ Register Namespace="CKEditor.NET" Assembly="CKEditor.NET" TagPrefix="CKEditor" %> 
 <asp:Content ID="Content1" ContentPlaceHolderID="main_body" runat="server">
         <form id="form1" runat="server">

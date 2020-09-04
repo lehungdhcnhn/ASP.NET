@@ -31,24 +31,6 @@ namespace GUI.HomeWeb {
         protected global::System.Web.UI.WebControls.Label lblSumOnline;
         
         /// <summary>
-        /// dropStart control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dropStart;
-        
-        /// <summary>
-        /// dropEnd control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dropEnd;
-        
-        /// <summary>
         /// DataList1 control.
         /// </summary>
         /// <remarks>

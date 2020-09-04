@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HomeWeb/HomeMaster.Master" AutoEventWireup="true" CodeBehind="TourKhuyenMai.aspx.cs" Inherits="GUI.HomeWeb.TourKhuyenMai" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HomeWeb/HomeMaster.Master" AutoEventWireup="true" CodeBehind="Seach.aspx.cs" Inherits="GUI.HomeWeb.Seach" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="main_body" runat="server">
-          <div class="clearfix clearfix-20"></div>
+        <div class="clearfix clearfix-20"></div>
                         <div class="sb_widget ">
                             <h2 class="tit_right_sp">Thời gian thực</h2>
                             <div class="clearfix"></div>
@@ -20,35 +20,12 @@
                             <a href="https://doanhnhanplus.online/" style="font-size: 0.1px;">Đọc Báo doanh nhân</a>
                         </div>
 </div>
+    
     <div class="col-md-9 col-sm-12 col-xs-12">
-       <h2 class="tit_home"><span class="txt_tit_home">TOUR KHUYẾN MÃI</span></h2>
+       <h2 class="tit_home"><span class="txt_tit_home">TOUR TRONG NƯỚC</span></h2>
 
     <div class="clearfix"></div>
-    <div class="search_content_s">
-        <div class="img_search_s"><img src="http://viettour.com.vn/assets/css/img/search.png" alt=""/></div>
-        <form method="post" action="http://viettour.com.vn/start">
-		
-            <div class="right_search_s">
-                <div class="thongtintourhot">
-                    <span>&nbsp;
-                        <span style="color: rgb(0, 51, 102);">Trên <strong>500 tour </strong></span>
-                    </span>
-                    <a href="">
-                        <span><span style="color: rgb(0, 51, 102);">du lịch trong &amp; </span></span>
-                    </a>
-                    <span>
-                        <span style="color: rgb(0, 51, 102);">&nbsp;ngoài nước đang có trên website, chọn<strong> </strong></span>
-                    </span>
-                    <span style="color: rgb(0, 51, 102);">
-                        <strong><a href=""><span>lịch khởi hành</span></a></strong>
-                    </span>
-                    <span><span style="color: rgb(0, 51, 102);"> để xem chi tiết</span></span>
-                </div>
-                <div class="clearfix"></div>
-               
-            </div>
-        </form>
-    </div>
+   
     <div class="clearfix" style="margin-bottom: 20px"></div>
     <div class="list_banner_home">
         <div class="row">
@@ -80,7 +57,7 @@
     <div class="clearfix clearfix-10"></div>
     <div class="list_tour_cate">
          <div class="box_tour_cate">
-             <asp:DataList ID="DataList1" runat="server" DataKeyField="ID"  DataSourceID="SqlDataSource1">
+             <asp:DataList ID="DataList1" runat="server" DataKeyField="ID" DataSourceID="SqlDataSource1">
         <ItemTemplate>
             <table cellpadding="0" cellspacing="0" class="nav-justified">
                 <tr>
@@ -89,11 +66,11 @@
                     </td>
                 </tr>
                 <tr>
-                    <td rowspan="6" style="width:250px">
+                    <td rowspan="6" style="width:230px">
                        <%-- <asp:Image CssClass="w_100 img_item_tour" Height="150px" ID="Image1" runat="server" ImageUrl='<%# Eval("thumbnail") %>' />--%>
 
                         <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl='<%# "HomeDescription.aspx?Id="+Eval("id").ToString() %>'
-                            ImageUrl='<%# Eval("thumbnail") %>' ToolTip="Xem chi tiết...." CssClass="w_100 img_item_tour" ImageHeight="230px" ImageWidth="230px"
+                            ImageUrl='<%# Eval("thumbnail") %>' ToolTip="Xem chi tiết...." CssClass="w_100 img_item_tour" ImageHeight="200px" ImageWidth="200px"
                             ></asp:HyperLink>
 
                     </td>
@@ -143,4 +120,6 @@
 	    </div>
 		</div>
    </div>
+        </form>
+       
 </asp:Content>

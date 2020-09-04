@@ -53,6 +53,7 @@
     <Reference Include="DevExpress.Web.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -200,7 +201,6 @@
     <Content Include="Admin\listTour.aspx" />
     <Content Include="Admin\Login.aspx" />
     <Content Include="Admin\SignUp.aspx" />
-    <Content Include="Admin\updateDiemDen.aspx" />
     <Content Include="Admin\Vendor\animate\animate.css" />
     <Content Include="Admin\Vendor\bootstrap\css\bootstrap-grid.css" />
     <Content Include="Admin\Vendor\bootstrap\css\bootstrap-grid.min.css" />
@@ -226,6 +226,8 @@
     <Content Include="HomeWeb\Home.aspx" />
     <Content Include="HomeWeb\HomeDescription.aspx" />
     <Content Include="HomeWeb\HomeWeb.aspx" />
+    <Content Include="HomeWeb\Seach.aspx" />
+    <Content Include="HomeWeb\Search.ascx" />
     <Content Include="HomeWeb\TourKhuyenMai.aspx" />
     <Content Include="HomeWeb\TourNuocNgoai.aspx" />
     <Content Include="Image\10884_586183561399725_6501735_n.jpg" />
@@ -326,7 +328,7 @@
     <Content Include="Admin\Vendor\bootstrap\css\bootstrap.css.map" />
     <Content Include="Admin\Vendor\bootstrap\css\bootstrap.min.css.map" />
     <Content Include="HomeWeb\HomeMaster.Master" />
-    <Content Include="Admin\Home.master" />
+    <Content Include="Admin\Home.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -394,6 +396,13 @@
     <Compile Include="Admin\listDiemDen.aspx.designer.cs">
       <DependentUpon>listDiemDen.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Home.Master.cs">
+      <DependentUpon>Home.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Home.Master.designer.cs">
+      <DependentUpon>Home.Master</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -424,6 +433,27 @@
     </Compile>
     <Compile Include="HomeWeb\HomeWeb.aspx.designer.cs">
       <DependentUpon>HomeWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeWeb\Seach.aspx.cs">
+      <DependentUpon>Seach.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeWeb\Seach.aspx.designer.cs">
+      <DependentUpon>Seach.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeWeb\HomeMaster.Master.cs">
+      <DependentUpon>HomeMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeWeb\HomeMaster.Master.designer.cs">
+      <DependentUpon>HomeMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="HomeWeb\Search.ascx.cs">
+      <DependentUpon>Search.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeWeb\Search.ascx.designer.cs">
+      <DependentUpon>Search.ascx</DependentUpon>
     </Compile>
     <Compile Include="HomeWeb\TourKhuyenMai.aspx.cs">
       <DependentUpon>TourKhuyenMai.aspx</DependentUpon>

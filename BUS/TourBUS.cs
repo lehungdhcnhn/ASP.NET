@@ -35,9 +35,9 @@ namespace BUS
             string sql = "delete tour where id='" + id + "'";
             da.exeNoneQuery(sql);
         }
-        public DataTable Search(string khoihanhtu, string diemden)
+        public DataTable Search(string key)
         {
-            string sql = "select Tour.*, diemden from tour inner join diemden on diemden.id=tour.diemdenid where khoiHanhTu='" + khoihanhtu + "' and diemden='" + diemden + "'";
+            string sql = "select Tour.*, diemden from tour inner join diemden on diemden.id=tour.diemdenid where Tour.tenTour like N'%" + key + "%' or Tour.khoiHanhTu like N'%" + key + "%' or thoiGian like N'%" + key + "%'  or khoiHangNgay like N'%" + key + "%' or gioiThieuTuor like N'%" + key + "%' or thumbnail like N'%" + key + "%' or chuongtrinhtour like N'%" + key + "%' or khuyenmai like N'%" + key + "%' or gia like N'%" + key + "%'   ";
             DataTable dt = new DataTable();
             dt = da.getTable(sql);
             return dt;

@@ -10,7 +10,7 @@
 namespace GUI.HomeWeb {
     
     
-    public partial class Home {
+    public partial class Seach {
         
         /// <summary>
         /// lblOnline control.
@@ -29,15 +29,6 @@ namespace GUI.HomeWeb {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblSumOnline;
-        
-        /// <summary>
-        /// Search control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::GUI.HomeWeb.Search Search;
         
         /// <summary>
         /// DataList1 control.

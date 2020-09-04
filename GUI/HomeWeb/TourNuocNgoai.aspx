@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HomeWeb/HomeMaster.Master" AutoEventWireup="true" CodeBehind="TourNuocNgoai.aspx.cs" Inherits="GUI.HomeWeb.TourNuocNgoai" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="main_body" runat="server">
+    
           <div class="clearfix clearfix-20"></div>
                         <div class="sb_widget ">
                             <h2 class="tit_right_sp">Thời gian thực</h2>
@@ -45,30 +46,7 @@
                     <span><span style="color: rgb(0, 51, 102);"> để xem chi tiết</span></span>
                 </div>
                 <div class="clearfix"></div>
-                <div id="khoihanh">Khởi hành từ
-                    <asp:DropDownList ID="dropStart" CssClass="select" runat="server">
-                                <asp:ListItem Text="Hà Nội" ></asp:ListItem>
-                                <asp:ListItem Text="Hồ Chí Minh" ></asp:ListItem>
-                   </asp:DropDownList>
-                </div>
-                <div id="diemden"> đến
-                    <label>
-                       <asp:DropDownList ID="dropEnd" CssClass="select" runat="server">
-                                <asp:ListItem Text="Chọn điểm đến" Value=""></asp:ListItem>
-                                <asp:ListItem Text="HÀ NỘI & LÂN CẬN"></asp:ListItem>
-                               <asp:ListItem Text="QUẢNG BÌNH"></asp:ListItem>
-                               <asp:ListItem Text="SAPA & ĐÔNG TÂY BẮC"></asp:ListItem>
-                               <asp:ListItem Text=">HUẾ, ĐÀ NẴNG, HỘI AN"></asp:ListItem>
-                               <asp:ListItem Text="ĐÀ LẠT, TÂY NGUYÊN"></asp:ListItem>
-                               <asp:ListItem Text="SINGAPORE"></asp:ListItem>
-                               <asp:ListItem Text="HÀN QUỐC"></asp:ListItem>
-                               <asp:ListItem Text="NHẬT BẢN"></asp:ListItem>
-                               <asp:ListItem Text="MALAYSIA"></asp:ListItem>
-                            </asp:DropDownList>
-                    </label>
-                    
-                    <asp:LinkButton runat="server" CssClas="tim_home" Text="Tìm" OnClick="SeachTourNe"></asp:LinkButton>
-                </div>
+               
             </div>
         </form>
     </div>
@@ -112,11 +90,11 @@
                     </td>
                 </tr>
                 <tr>
-                    <td rowspan="6" style="width:250px">
+                    <td rowspan="6" style="width:230px">
                        <%-- <asp:Image CssClass="w_100 img_item_tour" Height="150px" ID="Image1" runat="server" ImageUrl='<%# Eval("thumbnail") %>' />--%>
 
                         <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl='<%# "HomeDescription.aspx?Id="+Eval("id").ToString() %>'
-                            ImageUrl='<%# Eval("thumbnail") %>' ToolTip="Xem chi tiết...." CssClass="w_100 img_item_tour" ImageHeight="230px" ImageWidth="230px"
+                            ImageUrl='<%# Eval("thumbnail") %>' ToolTip="Xem chi tiết...." CssClass="w_100 img_item_tour" ImageHeight="200px" ImageWidth="200px"
                             ></asp:HyperLink>
 
                     </td>
@@ -166,4 +144,5 @@
 	    </div>
 		</div>
    </div>
+        </form>
 </asp:Content>
